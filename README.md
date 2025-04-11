@@ -1,15 +1,13 @@
-# POLICY EVALUATION
-```
-##AIM
+ POLICY EVALUATION
+
+AIM
 To evaluate and compare different policies in the Frozen Lake environment and find the best policy for reaching the goal successfully.
-```
-```
+
 PROBLEM STATEMENT
 In the Frozen Lake environment, an agent must navigate from the start to the goal while avoiding holes. Movements are uncertain due to slipperiness. A policy guides the agent’s actions, but not all policies are effective. The task is to:
 
 Evaluate a given policy (V1) using policy evaluation. Create and test a new policy (V2) to improve performance. Compare both policies based on success rate and rewards. Find the best policy for safely reaching the goal. This helps in identifying the most efficient way to complete the task.
-```
-```
+
 POLICY EVALUATION FUNCTION
 
 def policy_evaluation(pi, P, gamma=1.0, theta=1e-10):
@@ -24,10 +22,10 @@ def policy_evaluation(pi, P, gamma=1.0, theta=1e-10):
         break
       prev_V=V.copy()
     return V
-```
 
-## OUTPUT:
-###policies:
+
+OUTPUT:
+policies:
 policy 1:
 
 
@@ -44,7 +42,7 @@ policy 2:
 
 
 
-###State Value function:
+State Value function:
 
 
 State value function 1:
@@ -60,11 +58,11 @@ state value function 2:
 ![image](https://github.com/user-attachments/assets/f8d3af88-a861-42e3-b2b8-05c9e2c18239)
 
 
-###Best Policy
+Best Policy
 
 ![image](https://github.com/user-attachments/assets/c97ce762-1445-4ea0-bdb8-10ccea20d1d4)
 
-## RESULT:
+ RESULT:
 
 Thus, The Python program to evaluate the given policy is successfully executed.
 
