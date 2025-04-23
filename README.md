@@ -9,7 +9,7 @@ In the Frozen Lake environment, an agent must navigate from the start to the goa
 Evaluate a given policy (V1) using policy evaluation. Create and test a new policy (V2) to improve performance. Compare both policies based on success rate and rewards. Find the best policy for safely reaching the goal. This helps in identifying the most efficient way to complete the task.
 
 POLICY EVALUATION FUNCTION
-
+```
 def policy_evaluation(pi, P, gamma=1.0, theta=1e-10):
     prev_V = np.zeros(len(P), dtype=np.float64)
     # Write your code here to evaluate the given policy
@@ -22,7 +22,7 @@ def policy_evaluation(pi, P, gamma=1.0, theta=1e-10):
         break
       prev_V=V.copy()
     return V
-
+```
 
 OUTPUT:
 policies:
